@@ -11,7 +11,9 @@ app.use(cors());
 app.use(express.json());
 
 // 👉 SERVIR TON SITE ICI (AVANT LES ROUTES)
-app.use(express.static('./'));
+const path = require('path');
+ 
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Connexion à la base SQLite
 const db = new sqlite3.Database('./database.db');

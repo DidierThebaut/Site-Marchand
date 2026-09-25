@@ -29,7 +29,7 @@ function afficherProduits() {
     const liste = document.getElementById('liste-produits');
     if (!liste) return;
 
-    fetch('/api/produits')
+    fetch('http://localhost:8080/api/produits')
         .then(response => response.json())
         .then(produits => {
             produits.forEach(p => {
@@ -75,7 +75,7 @@ function afficherPanier() {
         return;
     }
 
-    fetch('/api/produits')
+    fetch('http://localhost:8080/api/produits')
         .then(res => res.json())
         .then(produits => {
             let total = 0;
@@ -116,7 +116,7 @@ function activerValidationCommande() {
     btnValider.addEventListener("click", () => {
         const panier = JSON.parse(localStorage.getItem('panier')) || [];
 
-        fetch('/api/commande', {
+        fetch('http://localhost:8080/api/commande', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ produits: panier })

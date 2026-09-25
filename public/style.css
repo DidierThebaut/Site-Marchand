@@ -1,0 +1,115 @@
+.produit {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    background: white;
+}
+body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    background: #f5f5f5;
+}
+
+h1 {
+    color: #333;
+}
+
+#btn {
+    padding: 10px 20px;
+    background: #0078ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#btn:hover {
+    background: #005fcc;
+}
+
+#message {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.btn-panier {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #0078ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}.photo-produit {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.cart-container {
+    display: block;
+    text-align: center;   /* bouton aligné à gauche */
+    margin-top: 20px;
+}
+
+#liste-produits {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.produit {
+  flex: 1;
+  min-width: 220px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background: #fafafa;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Aligne tout depuis le haut */
+}
+
+/* Force exactement la même hauteur pour le bloc image */
+.produit img {
+  width: 100% !important;
+  max-width: 200px !important;
+  height: 220px !important;       /* Hauteur identique pour les 3 */
+  object-fit: cover !important;  /* Empêche la déformation */
+  border-radius: 6px;
+  margin-bottom: 15px !important;
+}
+
+/* Force les titres à commencer à la même hauteur */
+.produit h3 {
+  margin-top: 0 !important;
+  margin-bottom: 10px;
+}
+
+/* Pousse le bouton 'Ajouter au panier' tout en bas */
+.produit button, .produit .btn {
+  margin-top: auto;
+}
+/* Alignement automatique du bouton en bas */
+.produit button, .produit .btn {
+  margin-top: auto;
+}
+
+/* 1. Zone d'image fixe pour forcer le même point de départ */
+.produit img {
+
+/* 2. Le titre prend sa place naturelle */
+.produit h3 {
+  margin: 0 0 10px 0;
+}
+
+/* 3. Pousse uniquement le bouton tout en bas de la carte */
+.produit button, .produit .btn {
+  margin-top: auto;
+}
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Site</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Mise en page simple et propre */
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        #liste-produits {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+   .produit {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background: #fafafa;
+  text-align: center;
+  
+  /* À AJOUTER POUR ÉGALISER LES CARTES */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+        .produit img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .btn-panier {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        button {
+            padding: 8px 15px;
+            margin-top: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .cart-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Bienvenue sur mon site</h1>
+
+    <p>Clique sur le bouton pour changer la couleur du texte :</p>
+    <button id="btn">Changer couleur</button>
+    <br>
+    <button>Mon nouveau bouton de test</button>
+
+    <p id="message">Ce texte va changer de couleur !</p>
+
+    <!-- 👉 Zone d’affichage des produits -->
+    <div id="liste-produits"></div>
+
+    <!-- 👉 Bouton panier centré -->
+    <div class="cart-container">
+        <a href="panier.html" class="btn-panier">Voir le panier</a>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
