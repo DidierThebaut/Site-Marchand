@@ -113,3 +113,65 @@ h1 {
   margin-top: auto;
 }
 }
+/* Centrer la section des avis clients */
+.avis-clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    /* Centre horizontalement les éléments enfants */
+  text-align: center;     /* Centre le texte */
+  max-width: 1200px;      /* Largeur max conseillée */
+  margin: 0 auto 40px;    /* Centre le bloc entier sur la page + marge bas */
+  padding: 0 20px;
+}
+
+/* Centrer les cartes ou la liste d'avis s'ils sont côte à côte */
+.avis-container {
+  display: flex;
+  justify-content: center; /* Centre les avis au milieu */
+  flex-wrap: wrap;        /* S'adapte sur mobile */
+  gap: 20px;              /* Espace entre chaque avis */
+  width: 100%;
+}
+
+/* Centrer le footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    /* Centre le contenu (liens, bouton, texte) */
+  justify-content: center;
+  text-align: center;     /* Centre le texte */
+  padding: 30px 20px;
+  background-color: #f8f9fa; /* (Optionnel) couleur de fond */
+}
+
+/* Centrer les liens du footer sur une ligne */
+footer .footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+.newsletter {
+  background: #f1f3f5;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.newsletter input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 250px;
+}
